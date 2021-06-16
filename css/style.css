@@ -1,0 +1,76 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+.body
+{
+    background: url(/img/bg.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board
+{
+    position: relative;
+    top: 50%;
+    right: 10%;
+    /* background: linear-gradient(rgb(170,236,170),rgb(236,236,167)); */
+    width: 90vmin;
+    height: 92vmin;
+    border: 10px solid rgb(32, 30, 30);
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}    
+
+.head
+{
+     background: red;
+    transform: scale(1.02);
+    /* border-radius: 50%; */
+    border: 2px solid wheat
+}
+
+.snake
+{
+    background-color: orangered;
+    border: .25vmin solid white;
+    /* border-radius: 50%; */
+}
+
+.food
+{
+    background-image: url(/img/apple1.png);
+    background-repeat: no-repeat;
+    /* background-color: yellow;background: linear-gradient(red, purple); */
+    /* border: .25vmin solid black; */
+    /* border-radius: 50%;  */
+}
+
+#scoreBox
+{
+    position: absolute;
+    top: 9px;
+    left: 1000px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Itim', cursive;
+}
+
+#highScoreBox
+{
+    position: absolute;
+    top: 50px;
+    left: 1000px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Itim', cursive;
+}
+
